@@ -12,18 +12,18 @@ class Service
 {
     protected GuzzleHttp\ClientInterface $client;
     protected ConfigInterface $config;
-protected TokenProviderInterface $tokenProvider;
+    protected TokenProviderInterface $tokenProvider;
 
     protected const BASE_URI = "https://callcheck.streamtele.com/api/v1/task";
 
     public function __construct(
-        GuzzleHttp\ClientInterface $client,
         ConfigInterface $config,
+        GuzzleHttp\ClientInterface $client,
         TokenProviderInterface $tokenProvider
     ) {
         $this->client = $client;
         $this->config = $config;
-        $this->tokenProvider=$tokenProvider;
+        $this->tokenProvider = $tokenProvider;
     }
 
     /**
@@ -37,7 +37,7 @@ protected TokenProviderInterface $tokenProvider;
             [
                 'Authorization' => 'Bearer ' . $this->tokenProvider->getToken($this->config),
                 'Content-Type' => 'application/json',
-                ],
+            ],
             json_encode(
                 [
                     "phone" => $phone,
