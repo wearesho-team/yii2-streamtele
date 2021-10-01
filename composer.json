@@ -1,5 +1,7 @@
 {
     "name": "wearesho-team/yii2-streamtele",
+    "description": "Streamtele integration",
+    "type": "library",
     "license": "MIT",
     "require": {
         "guzzlehttp/guzzle": "^7.3",
@@ -11,5 +13,21 @@
         "phpstan/phpstan": "^0.12.99",
         "phpunit/phpunit": "^9.5",
         "squizlabs/php_codesniffer": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wearesho\\Streamtele\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wearesho\\Streamtele\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "lint": "./vendor/bin/phpcs --standard=PSR12 ./src ./tests",
+        "phpcbf": "./vendor/bin/phpcbf --standard=PSR12 ./src ./tests",
+        "phpstan": " vendor/bin/phpstan analyse src",
+        "test": "./vendor/bin/phpunit"
     }
 }

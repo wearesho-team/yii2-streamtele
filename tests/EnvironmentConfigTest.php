@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Wearesho\Streamtele\Tests;
 
 use PHPUnit\Framework\TestCase;
@@ -12,7 +14,7 @@ class EnvironmentConfigTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->config = new  Streamtele\EnvironmentConfig;
+        $this->config = new  Streamtele\EnvironmentConfig();
     }
 
     public function testGetCallbackUrl(): void
@@ -29,6 +31,6 @@ class EnvironmentConfigTest extends TestCase
     public function testGetPassword(): void
     {
         putenv('STREAMTELE_PASSWORD=examplePassword');
-        $this->assertEquals('examplePassword', $this->config->getEmail());
+        $this->assertEquals('examplePassword', $this->config->getPassword());
     }
 }

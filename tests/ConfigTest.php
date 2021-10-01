@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Wearesho\Streamtele\Tests;
 
 use PHPUnit\Framework\TestCase;
@@ -46,5 +48,4 @@ class ConfigTest extends TestCase
             $this->config->getPassword()
         );
     }
-
 }

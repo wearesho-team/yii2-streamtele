@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Wearesho\Streamtele;
 
 use GuzzleHttp;
-use Wearesho\Streamtele\Authorization\AuthHandler;
 use Wearesho\Streamtele\Authorization\TokenProviderInterface;
 
 class Service
@@ -17,9 +16,9 @@ class Service
     protected const BASE_URI = "https://callcheck.streamtele.com/api/v1/task";
 
     public function __construct(
-        ConfigInterface $config,
-        GuzzleHttp\ClientInterface $client,
-        TokenProviderInterface $tokenProvider
+        ConfigInterface $config = null,
+        GuzzleHttp\ClientInterface $client = null,
+        TokenProviderInterface $tokenProvider = null
     ) {
         $this->client = $client;
         $this->config = $config;

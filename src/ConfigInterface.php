@@ -9,5 +9,4 @@ interface ConfigInterface
     public function getCallbackUrl(): string;
     public function getPassword(): string;
     public function getEmail(): string;
-
 }
