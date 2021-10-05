@@ -1,6 +1,6 @@
 <?php
 
-namespace Wearesho\NBU\BankId\Yii\Migrations;
+namespace Wearesho\BankId\Yii\Migrations;
 
 use Horat1us\Yii\Migration;
 
