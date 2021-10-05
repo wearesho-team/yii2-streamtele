@@ -12,7 +12,7 @@
         "wearesho-team/yii-http": "^1.16.3",
         "horat1us/yii2-migration-bootstrap": "^1.2",
         "guzzlehttp/guzzle": "^6.2",
-        "horat1us/yii2-carbon-behavior": "^1.1"
+        "horat1us/yii2-carbon-behavior": "^1.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12.99",
