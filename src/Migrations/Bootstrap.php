@@ -1,6 +1,6 @@
 <?php
 
-namespace Wearesho\BankId\Yii\Migrations;
+namespace Wearesho\Streamtele\Migrations;
 
 use Horat1us\Yii\Migration;
 
