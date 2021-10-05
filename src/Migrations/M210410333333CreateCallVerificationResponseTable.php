@@ -15,6 +15,7 @@ class M210410333333CreateCallVerificationResponseTable extends Migration
             [
                 'id' => $this->primaryKey(),
                 'data' => $this->json()->notNull(),
+                'at' => $this->dateTime()->notNull(),
             ]
         );
     }

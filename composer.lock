@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e917683eaaf4f48644fa3703782b872f",
+    "content-hash": "9052d9e977d16dda24d17ea15c2998a8",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -440,6 +440,48 @@
                 "yii2"
             ],
             "time": "2019-09-11T18:42:58+00:00"
+        },
+        {
+            "name": "horat1us/yii2-carbon-behavior",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Horat1us/yii2-carbon-behavior.git",
+                "reference": "eb6c064e7668ec0c605c8b3d37e71c7b415f647e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Horat1us/yii2-carbon-behavior/zipball/eb6c064e7668ec0c605c8b3d37e71c7b415f647e",
+                "reference": "eb6c064e7668ec0c605c8b3d37e71c7b415f647e",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^1.36 | ^2.0",
+                "php": ">=7.3",
+                "yiisoft/yii2": "^2.0.15"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Horat1us\\Yii\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Letnikow",
+                    "email": "reclamme@gmail.com"
+                }
+            ],
+            "description": "Yii2 Carbon Timestamps Behavior",
+            "time": "2020-09-04T13:00:50+00:00"
         },
         {
             "name": "horat1us/yii2-migration-bootstrap",
